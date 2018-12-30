@@ -17,36 +17,32 @@
 	a:hover {color: red}
 	
 	
-  	#mydiv {
+  	#star {
   		position: absolute;
   		z-index: 9;
   		text-align: left;
   	}
+	
+	#header {
+  		position: absolute;
+  		z-index: 9;
+  		text-align: center;
+  	}
 
-	#mydivheader {
-		 padding: 10px;
- 		 cursor: move;
- 		 z-index: 10;
- 		 background-color: #2196F3;
- 		 color: #fff;
-	}
 </style>
 
 <body>
 	<div><img src="zoevogelsang.github.io/zvimages/click.png" style="width:65px" align="left"></div>
 
-	<div id="mydiv">
-  		<img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left">
-	</div>
+	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
+	<div id="header"> <a href="#" style="color:#FFA5DE;">zoe vogelsang</a> </div>
 
 	<script>
-		dragElement(document.getElementById("mydiv"));
+		dragElement(document.getElementById("star"));
+		dragElement(document.getElementById("header"));
 
 		function dragElement(elmnt) {
-			var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  			if (document.getElementById(elmnt.id + "header")) {
-    				document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  			} else {
+			var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;{
     				elmnt.onmousedown = dragMouseDown;
   			}
 
@@ -82,7 +78,7 @@
 
 
 <header>
-  <h1> <a href="#" style="color:#FFA5DE;">zoe vogelsang</a> </h1>
+  
   
   <p> 
       <a href="#" style="color:#FFA5DE;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
