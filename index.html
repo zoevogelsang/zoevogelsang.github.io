@@ -7,70 +7,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+	
 <style>
-body {text-align:center; font-family: "Comic Sans MS", "Comic Sans", sans-serif }
-h1 {letter-spacing:6px}
+  body {text-align:center; font-family: "Comic Sans MS", "Comic Sans", sans-serif }
+  h1 {letter-spacing:6px}
 
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:hover {color: red}
+	a:link {text-decoration: none;}
+	a:visited {text-decoration: none;}
+	a:hover {color: red}
 
 
-#star {position:absolute;display:none;}
-#onme {width:100%;height:80px;cursor:pointer}  
-  
-
+	#star {position:absolute;display:none;}
+	#onme {width:100%;height:80px;cursor:pointer}  
 </style>
 
-<script type="text/javascript">
-var divName = 'star'; // div that is to follow the mouse (must be position:absolute)
-var offX = 10;          // X offset from mouse position
-var offY = 10;          // Y offset from mouse position
+ 
 
-function mouseX(evt) {if (!evt) evt = window.event; if (evt.pageX) return evt.pageX; else if (evt.clientX)return evt.clientX + (document.documentElement.scrollLeft ?  document.documentElement.scrollLeft : document.body.scrollLeft); else return 0;}
-function mouseY(evt) {if (!evt) evt = window.event; if (evt.pageY) return evt.pageY; else if (evt.clientY)return evt.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop); else return 0;}
-
-function follow(evt) {
-    var obj = document.getElementById(divName).style;
-    obj.left = (parseInt(mouseX(evt))+offX) + 'px';
-    obj.top = (parseInt(mouseY(evt))+offY) + 'px'; 
-    }
-document.onmousemove = follow;
-</script>
-</head>
-<body>
-<div id="star"><img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100%"></div>
-<br><br>
-<div id='onme' onMouseover='document.getElementById(divName).style.display="block"' image</div>
-</body>
 
 <body>
-
+  
+  <div id="drag-1" class="draggable">
+  	<p> You can drag one element </p>
+	</div>
+	
+	<div id="drag-2" class="draggable">
+  	<p> with each pointer </p>
+	</div>
+  
+  
 <header>
-<center>
   <h1> <a href="#" style="color:#FFA5DE;">zoe vogelsang</a> </h1>
   
   <p> 
-  
       <a href="#" style="color:#FFA5DE;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
       <a href="#" style="color:#A5D2FF;">early high school</a> &nbsp;&nbsp;&nbsp;&nbsp;
       <a href="#" style="color:#FFDEA5;">senior year</a> &nbsp;&nbsp;&nbsp;&nbsp;
       <a href="#" style="color:#B1FFA5;">college</a> &nbsp;&nbsp;&nbsp;&nbsp;
       <a href="#" style="color:#CCBCFF;">contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
    
-  </p>
-</center>  
+  </p>  
 </header>
-
-<!-- Photo Grid -->
+	
+	
 <div>
 <img src="zoevogelsang.github.io/zvimages/natlil.jpeg" style="width:100%">
-
-
 </div>
   
 
-</div>
 
 <footer style="color:grey;"> 
 </footer>
