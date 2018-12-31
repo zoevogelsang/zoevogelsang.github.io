@@ -28,6 +28,13 @@
   		z-index: 9;
   		text-align: center;
   	}
+	
+	#natlil {
+  		position: absolute;
+  		z-index: 9;
+  		text-align: center;
+		padding-top: 200px;
+  	}
 
 </style>
 
@@ -35,23 +42,16 @@
 	<div><img src="zoevogelsang.github.io/zvimages/click.png" style="width:65px" align="left"></div>
 
 	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
-	<div id="header"> <a href="#" style="color:#FFA5DE;">zoe vogelsang</a> </div>
+	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
+	<div id="natlil"><img src="zoevogelsang.github.io/zvimages/natlil.jpeg" style="width:100%" align="center"></div>
 
 	<script>
-		var a = 1;
-		var b = 2;
-		var c = 3;
-		var d = 4;
 		dragElement(document.getElementById("star"));
-		
-		var a = 0;
-		var b = 0;
-		var c = 0;
-		var d = 0;
 		dragElement(document.getElementById("header"));
+		dragElement(document.getElementById("natlil"));
 
 		function dragElement(elmnt) {
-			var pos1 = a, pos2 = b, pos3 = c, pos4 = d;{
+			var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;{
     				elmnt.onmousedown = dragMouseDown;
   			}
 
@@ -83,12 +83,10 @@
     				document.onmousemove = null;
   			}
 		}
-</script>
+	</script>
 
 
 <header>
-  
-  
   <p> 
       <a href="bio" style="color:#FFA5DE;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
       <a href="hs" style="color:#A5D2FF;">early high school</a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -99,15 +97,10 @@
   </p>  
 </header>
 	
-	
-<div>
-<img src="zoevogelsang.github.io/zvimages/natlil.jpeg" style="width:100%">
-</div>
   
 
 
-<footer style="color:grey;"> 
-</footer>
+<footer style="color:grey;"> copyright zoe vogelsang 2018 :) </footer>
 
 </body>
 </html>
