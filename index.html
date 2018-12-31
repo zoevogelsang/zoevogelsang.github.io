@@ -55,33 +55,35 @@
 		left: 2%;
   	}
 	
-	#oil {
-  		position: absolute;
-		top: 60px;
-		left: 47%;
-  	}
 	
-	#acrylic {
-  		position: absolute;
-		top: 80px;
-		left: 47%;
-  	}
-	
-	#drawings {
-  		position: absolute;
-		top: 100px;
-		left: 47%;
-  	}
-	
-	#highschool {
-  		position: absolute;
-		top: 120px;
-		left: 47%;
-  	}
-	
-	#work {
-		position: absolute;
+	.dropbtn {
+  	color: #FFDEA5;
+  	padding: 16px;
+  	font-size: 16px;
+  	border: none;
 	}
+
+	.dropdown {
+  	position: relative;
+  	display: inline-block;
+	}
+
+	.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	min-width: 160px;
+  	z-index: 1;
+	}
+
+	.dropdown-content a {
+  	color: black;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+	}
+
+	.dropdown:hover .dropdown-content {display: block;}
+	
 
 </style>
 
@@ -93,10 +95,18 @@
 	<div id="me"><img src="zoevogelsang.github.io/zvimages/meinartroom.JPG" style="width:100%" align="center"></div>
 	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
 	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
-	<div id="oil" style="color:blue;" style="font-size:160%"style='display:none;'> oil paintings </div>
-	<div id="acrylic" style="color:green;" style="font-size:160%;"style="display:none;"> acrylic paintings </div>
-	<div id="drawings" style="color:grey;" style="font-size:160%;"style="display:none;"> drawings </div>
-	<div id="highschool" style="color:pink;" style="font-size:160%"style="display:none;"> earlier high school work </div>
+	
+	<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    	<a href="#">oil paintings 1</a>
+    	<a href="#">acrylic paintings 2</a>
+    	<a href="#">drawings</a>
+	<a href="#">earlier high school work</a>
+  </div>
+		
+</div>
+	
 	
 	<div>
 		<a href="bio" style="color:#A5D2FF;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
