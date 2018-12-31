@@ -95,22 +95,20 @@
 	<div id="me"><img src="zoevogelsang.github.io/zvimages/meinartroom.JPG" style="width:100%" align="center"></div>
 	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
 	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
-	
-	<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    	<a href="#">oil paintings 1</a>
-    	<a href="#">acrylic paintings 2</a>
-    	<a href="#">drawings</a>
-	<a href="#">earlier high school work</a>
-  </div>
 		
 </div>
 	
 	
 	<div>
 		<a href="bio" style="color:#A5D2FF;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
-      		<a id="work" style="color:#FFDEA5;">work</a> &nbsp;&nbsp;&nbsp;&nbsp;
+      		<div class="dropdown">
+  			<button class="dropbtn">work</button>
+  			<div class="dropdown-content">
+    				<a href="#">oil paintings</a>
+    				<a href="#">acrylic paintings</a>
+    				<a href="#">drawings</a>
+				<a href="#">earlier high school work</a>
+			  </div>
       		<a href="contact" style="color:#CCBCFF;">contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
 	</div>
 
@@ -157,14 +155,6 @@
     				document.onmousemove = null;
   			}	
 		}
-		
-		function workDropdown(e){
-			('#oil').show();
-			('#acrylic').show();
-			('#drawings').show();
-			('#earlywork').show();
-		}
-		
 	</script>
 
 
