@@ -34,7 +34,7 @@
   		position: absolute;
 		width: 30%;
   		z-index: auto;
-  		text-align: center;
+  		text-align: left;
 		padding-top: 200px;
 		left: 20%;
   	}
@@ -42,8 +42,9 @@
 	#me {
   		position: absolute;
   		z-index: auto;
-  		text-align: center;
+  		text-align: right;
 		padding-top: 200px;
+		right: 20%;
   	}
 	
 	#natela {
@@ -67,12 +68,16 @@
 	<div><img src="zoevogelsang.github.io/zvimages/click.png" style="width:65px" align="left"></div>
 
 	<div id="natlil"><img src="zoevogelsang.github.io/zvimages/natlil.jpeg" style="width:100%" align="center"></div>
+	<div id="natela"><img src="zoevogelsang.github.io/zvimages/natela.jpeg" style="width:100%" align="center"></div>
+	<div id="me"><img src="zoevogelsang.github.io/zvimages/meinartroom.jpeg" style="width:100%" align="center"></div>
 	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
 	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
 	<div id="footer" style="color:grey;" style="font-size:160%">  </div>
 
 	<script>
 		dragElement(document.getElementById("natlil"));
+		dragElement(document.getElementById("natela"));
+		dragElement(document.getElementById("me"));
 		dragElement(document.getElementById("star"));
 		dragElement(document.getElementById("header"));
 		
