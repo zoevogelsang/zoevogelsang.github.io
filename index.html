@@ -26,16 +26,17 @@
 	#header {
   		position: absolute;
   		z-index: auto;
+		font-size: 150%;
   		text-align: center;
   	}
 	
 	#natlil {
   		position: absolute;
-		width: 700px;
+		width: 500px;
   		z-index: auto;
   		text-align: center;
 		padding-top: 200px;
-		left: 50%;
+		left: 20%;
   	}
 	
 	#me {
@@ -68,12 +69,13 @@
 	<div id="natlil"><img src="zoevogelsang.github.io/zvimages/natlil.jpeg" style="width:100%" align="center"></div>
 	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
 	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
-	<div id="footer" style="color:grey;" style="font-size:160%"> copyright zoe vogelsang 2018 :) </div>
+	<div id="footer" style="color:grey;" style="font-size:160%">  </div>
 
 	<script>
+		dragElement(document.getElementById("natlil"));
 		dragElement(document.getElementById("star"));
 		dragElement(document.getElementById("header"));
-		dragElement(document.getElementById("natlil"));
+		
 
 		function dragElement(elmnt) {
 			var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;{
@@ -106,17 +108,18 @@
   			function closeDragElement() {
     				document.onmouseup = null;
     				document.onmousemove = null;
-  			}
+  			}	
 		}
+		
+		
+			
 	</script>
 
 
 <header>
   <p> 
-      <a href="bio" style="color:#FFA5DE;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="hs" style="color:#A5D2FF;">early high school</a> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="sy" style="color:#FFDEA5;">senior year</a> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="college" style="color:#B1FFA5;">college</a> &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="bio" style="color:#A5D2FF;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="sy" style="color:#FFDEA5;">work</a> &nbsp;&nbsp;&nbsp;&nbsp;
       <a href="contact" style="color:#CCBCFF;">contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
    
   </p>  
