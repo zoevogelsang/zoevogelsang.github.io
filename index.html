@@ -54,11 +54,35 @@
 		padding-top: 200px;
   	}
 	
-	#footer {
+	#oil {
   		position: absolute;
   		z-index: auto;
   		text-align: center;
-		padding-top: 200px;
+		padding-top: 100px;
+		padding-left: 50%;
+  	}
+	
+	#acrylic {
+  		position: absolute;
+  		z-index: auto;
+  		text-align: center;
+		padding-top: 100px;
+		padding-left: 50%;
+  	}
+	
+	#drawing {
+  		position: absolute;
+  		z-index: auto;
+  		text-align: center;
+		padding-top: 100px;
+		padding-left: 50%;
+  	}
+	
+	#earlywork {
+  		position: absolute;
+  		z-index: auto;
+  		text-align: center;
+		padding-top: 100px;
 		padding-left: 50%;
   	}
 
@@ -72,7 +96,10 @@
 	<div id="me"><img src="zoevogelsang.github.io/zvimages/meinartroom.jpeg" style="width:100%" align="center"></div>
 	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
 	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
-	<div id="footer" style="color:grey;" style="font-size:160%">  </div>
+	<div id="oil" style="color:blue;" style="font-size:160%"style='display:none;'> oil paintings </div>
+	<div id="acrylic" style="color:green;" style="font-size:160%;" style='display:none;'> acrylic paintings </div>
+	<div id="drawings" style="color:grey;" style="font-size:160%;"style='display:none;'> drawings </div>
+	<div id="earlywork" style="color:pink;" style="font-size:160%"style='display:none;'> early work </div>
 
 	<script>
 		dragElement(document.getElementById("natlil"));
@@ -116,8 +143,15 @@
   			}	
 		}
 		
+		work.onclick = workDropdown;
 		
-			
+		function workDropdown(e){
+			('#oil').show();
+			('#acrylic').show();
+			('#drawings').show();
+			('#earlywork').show();
+		}
+		
 	</script>
 
 
