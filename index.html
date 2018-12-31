@@ -27,15 +27,15 @@
   		position: absolute;
   		z-index: auto;
 		font-size: 150%;
-  		text-align: center;
+  		top: 10px;
+		left: 50%
   	}
 	
 	#natlil {
   		position: absolute;
 		width: 30%;
   		z-index: auto;
-  		align: left;
-		padding-top: 200px;
+		top: 200px;
 		left: 20%;
   	}
 	
@@ -99,9 +99,15 @@
 	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
 	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
 	<div id="oil" style="color:blue;" style="font-size:160%"style='display:none;'> oil paintings </div>
-	<div id="acrylic" style="color:green;" style="font-size:160%;" style='display:none;'> acrylic paintings </div>
-	<div id="drawings" style="color:grey;" style="font-size:160%;"style='display:none;'> drawings </div>
-	<div id="earlywork" style="color:pink;" style="font-size:160%"style='display:none;'> early work </div>
+	<div id="acrylic" style="color:green;" style="font-size:160%;"style="display:none;"> acrylic paintings </div>
+	<div id="drawings" style="color:grey;" style="font-size:160%;"style="display:none;"> drawings </div>
+	<div id="earlywork" style="color:pink;" style="font-size:160%"style="display:none;"> early work </div>
+	
+	<div>
+		<a href="bio" style="color:#A5D2FF;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
+      		<a href="sy" style="color:#FFDEA5;">work</a> &nbsp;&nbsp;&nbsp;&nbsp;
+      		<a href="contact" style="color:#CCBCFF;">contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
 
 	<script>
 		dragElement(document.getElementById("natlil"));
@@ -109,6 +115,8 @@
 		dragElement(document.getElementById("me"));
 		dragElement(document.getElementById("star"));
 		dragElement(document.getElementById("header"));
+		
+		work.onclick = workDropdown;
 		
 
 		function dragElement(elmnt) {
@@ -145,8 +153,6 @@
   			}	
 		}
 		
-		work.onclick = workDropdown;
-		
 		function workDropdown(e){
 			('#oil').show();
 			('#acrylic').show();
@@ -157,18 +163,6 @@
 	</script>
 
 
-<header>
-  <p> 
-      <a href="bio" style="color:#A5D2FF;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="sy" style="color:#FFDEA5;">work</a> &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="contact" style="color:#CCBCFF;">contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
-   
-  </p>  
-</header>
-	
   
-
-
-
 </body>
 </html>
