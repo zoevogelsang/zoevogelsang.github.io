@@ -10,7 +10,6 @@
 <head>
 <style>
 	body {text-align:center; font-family: "Comic Sans MS", "Comic Sans", sans-serif }
-  	h1 {letter-spacing:6px}
 
 	a:link {text-decoration: none;}
 	a:visited {text-decoration: none;}
@@ -21,7 +20,6 @@
   		position: absolute;
   		z-index: auto;
 		right: 2%;
-		top: 80px;
   	}
 	
 	#header {
@@ -58,19 +56,19 @@ ul {
 }
 
 li {
-  float: left;
+  float: center;
 }
 
 li a, .dropbtn {
   display: inline-block;
-  color: white;
+  color: purple;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: transparent;
 }
 
 li.dropdown {
@@ -80,14 +78,14 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: transparent;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: powder blue; 
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -103,37 +101,40 @@ li.dropdown {
 </head>
 
 
+	
+	
+	
 <body>
   
-  
-	<div><img src="zoevogelsang.github.io/zvimages/click.png" style="width:65px" align="right"></div>
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </li>
-</ul>
+		<!-- <div><img src="zoevogelsang.github.io/zvimages/click.png" style="width:65px" align="right"></div> -->
 
-<h3>Dropdown Menu inside a Navigation Bar</h3>
-<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px"> </div>
+	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>	
+	
+<!-- MENU: -->
+	<div id="menu">
+	<ul>
+  		<li><a href="#home">Home</a></li>
+  		<li><a href="#news">News</a></li>
+  		<li class="dropdown">
+    			<a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    			<div class="dropdown-content">
+      				<a href="#">Link 1</a>
+      				<a href="#">Link 2</a>
+      				<a href="#">Link 3</a>
+    			</div>
+  		</li>
+	</ul>
+	</div>
+
   
-	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
-	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
-		
-</div>
-	
-	
+
 
 	<script>
 		dragElement(document.getElementById("star"));
 		dragElement(document.getElementById("header"));
+		dragElement(document.getElementById("menu"));
 
 		function dragElement(elmnt) {
 			var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;{
