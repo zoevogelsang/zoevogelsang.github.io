@@ -1,0 +1,191 @@
+html,
+@font-face {
+	font-family: 'neon';
+	src: url(neon.ttf) format("truetype");
+}
+body {
+  height: 100%;
+  font-family: 'Josefin Sans';
+}
+
+p {
+  font-size: 15px;
+  color: black;
+  line-height: 1.8;
+}
+
+.sidebar {
+	visibility: visible;
+	margin: 0;
+	padding: 10px;
+	width: 200px;
+	height: 100%;
+	position: fixed;
+	top:100px;
+	overflow: auto;
+}
+
+.sidebar-item {
+	display: block;
+	padding:5px;
+}
+
+.sidebar-name {
+
+}
+
+/* Sidebar links */
+.sidebar a {
+	font-size: 30px;
+	color: #001418;
+	margin: 0;
+	font-weight: 400;
+	font-family: 'Josefin Sans';
+	padding: 20px;
+ 	text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+	font-size: 30px;
+	font-family: 'Josefin Sans';
+	color: red;        
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+	font-size: 30px;
+	font-family: 'Josefin Sans';
+	color: pink;    
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 250px;
+  height: 100%;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+#copyright{
+	font-size: 12px;
+	color: #979797;
+	top: 90%;
+}
+
+
+
+
+.index-img {
+	top:100px;
+	width: 40%;
+	overflow: hidden;
+	padding: 15px;
+}
+
+
+
+/* ----------------------
+		Gallery
+------------------------*/
+
+#gallery {
+	margin-left: 0px;
+}
+
+.gallery-img {
+	display: none;
+	cursor: pointer;
+	overflow: hidden;
+	width: 20%;
+	padding: 15px;
+}
+
+
+
+
+/* ----------------------
+	Image Close Up
+------------------------*/
+
+#image-large {
+	position: fixed;
+	height: 70%;
+	display: none;
+	position: absolute;
+    top: 100px; bottom: 0px; left: 300px; right:0;
+}
+
+#counter {
+	display: none;
+	color: #979797;
+	font-family: Josefin Sans;
+	font-size: 15px;
+	position: fixed;
+	text-align: left;
+	top: 60px;
+	left: 400px;
+}
+
+#description {
+	display:none;
+	font-family: 'Josefin Sans';
+	font-size: 15px;
+	position: fixed;
+	text-align: center;
+	bottom: calc(30% - 150px);
+	left: 300px;
+}
+
+#toggle {
+	color: black;
+	display:none;
+	cursor: pointer;
+	font-family: 'Josefin Sans';
+	font-size: 15px;
+	position: fixed;
+	text-align: left;
+	top: 60px;
+	left: 300px;
+}
+
+#next-btn{}
+#prev-btn{}
+
+#close-btn {
+	display:none;
+	cursor: pointer;
+	font-family: 'Josefin Sans';
+	font-size: 30px;
+	position: fixed;
+	top: 0px;
+	right: 40px;
+}
+
+
+
+
+
+
+
