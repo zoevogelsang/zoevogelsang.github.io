@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Zoe Vogelsang</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link href="img/favicon.png" rel="shortcut icon"/>
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadGallery()">
+
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-name">
+			<a padding="15px" href="index.html">Zoe Vogelsang</a>
+		</div>
+		<div class="sidebar-item">
+		<a class="active">work</a>
+		</div>
+		<div class="sidebar-item">
+		<a href="about.html">about</a>
+		</div>
+		<div class="sidebar-item">
+		<a href="contact.html">contact</a>
+		</div>
+		<p id="copyright"> copyright 2019 Zoe Vogelsang </p>
+	</div>
+
+	<div class="content" id="content"> 
+		<div id="gallery"></div>
+		<img id="image-large">
+		<p id="counter"> counter </p>
+		<p id="toggle"> 
+			<span id="prev-btn" onclick="toggleLeft()"> prev </span> 
+			<span id="slash"> / </span>
+			<span id="next-btn" onclick="toggleRight()"> next </p>
+		</p>
+		<p id="description"> temp description </p>
+		<div id="tiny-gallery"></div>
+	</div>
+
+	<p id="close-btn" onclick="closeImageView()"> x </p>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
