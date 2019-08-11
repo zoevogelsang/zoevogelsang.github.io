@@ -1,174 +1,39 @@
 <!DOCTYPE html>
-<html>
-
-<title>zoe vogelsang</title>
-<link rel="shortcut icon" type="image/png" href="zoevogelsang.github.io/zvimages/natlil.jpeg"/>
-  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
-<style>
-	body {text-align:center; font-family: "Comic Sans MS", "Comic Sans", sans-serif }
-  	h1 {letter-spacing:6px}
-
-	a:link {text-decoration: none;}
-	a:visited {text-decoration: none;}
-	a:hover {color: red}
-	
-	
-  	#star {
-  		position: absolute;
-  		z-index: auto;
-		right: 2%;
-		top: 80px;
-  	}
-	
-	#header {
-  		position: absolute;
-  		z-index: auto;
-		font-size: 150%;
-  		top: 10px;
-		left: 2%
-  	}
-	
-	#menu {
-  		position: absolute;
-  		z-index: auto;
-		font-size: 100%;
-  		top: 10px;
-		left: 42%
-	}
-	
-	#natlil {
-  		position: absolute;
-		width: 31%;
-  		z-index: auto;
-		top: 200px;
-		left: 34.5%;
-  	}
-	
-	#me {
-  		position: absolute;
-		width: 31%;
-  		z-index: auto;
-		top: 200px;
-		right: 2%;
-  	}
-	
-	#natela {
-  		position: absolute;
-		width: 31%;
-  		z-index: auto;
-		top: 200px;
-		left: 2%;
-  	}
-	
-	
-	.dropbtn {
-  	color: #FFDEA5;
-  	padding: 16px;
-  	font-size: 16px;
-  	border: none;
-	background-color: rgb(0,0,0,0);
-	}
-
-	.dropdown {
-  	position: relative;
-  	display: inline-block;
-	}
-
-	.dropdown-content {
-  	display: none;
-  	position: absolute;
-  	min-width: 160px;
-  	z-index: 1;
-	background-color: rgb(0,0,0,0);	
-	}
-
-	.dropdown-content a {
-  	color: black;
-  	padding: 12px 16px;
-  	text-decoration: none;
-  	display: block;
-	}
-
-	.dropdown:hover .dropdown-content {display: block;}
-	
-
-</style>
+<html lang="en">
+<head>
+	<title>Zoe Vogelsang</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
 
 <body>
-	<div><img src="zoevogelsang.github.io/zvimages/click.png" style="width:65px" align="right"></div>
 
-	<div id="natlil"><img src="zoevogelsang.github.io/zvimages/natlil.jpeg" style="width:100%" align="center"></div>
-	<div id="natela"><img src="zoevogelsang.github.io/zvimages/natela.JPG" style="width:100%" align="center"></div>
-	<div id="me"><img src="zoevogelsang.github.io/zvimages/meinartroom.JPG" style="width:100%" align="center"></div>
-	<div id="star"> <img src="zoevogelsang.github.io/zvimages/favicon.png" style="width:100px" align="left"> </div>
-	<div id="header"> <a href="#" style="color:#FFA5DE;" style="width:500px" align="center">zoe vogelsang</a> </div>
-		
-</div>
-	
-	
-	<div id="menu">
-		<a href="bio" style="color:#A5D2FF;">bio</a> &nbsp;&nbsp;&nbsp;&nbsp;
-      		<div class="dropdown">
-  			<button class="dropbtn" style="font-family:"Comic Sans">work</button>
-  			<div class="dropdown-content">
-    				<a href="#">oil paintings</a>
-    				<a href="#">acrylic paintings</a>
-    				<a href="#">drawings</a>
-				<a href="#">earlier high school work</a>
-			  </div>
-      		<a href="contact" style="color:#CCBCFF;">contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-name">
+			<a class="active" padding="15px">Zoe Vogelsang</a>
+		</div>
+		<div class="sidebar-item">
+		<a href="work.html">work</a>
+		</div>
+		<div class="sidebar-item">
+		<a href="about.html">about</a>
+		</div>
+		<div class="sidebar-item">
+		<a href="contact.html">contact</a>
+		</div>
 	</div>
 
-	<script>
-		dragElement(document.getElementById("natlil"));
-		dragElement(document.getElementById("natela"));
-		dragElement(document.getElementById("me"));
-		dragElement(document.getElementById("star"));
-		dragElement(document.getElementById("header"));
-		
-		work.onclick = workDropdown;
-		
+	<div class="content" id="content"> 
+		<img class="index-img" src="img/about.jpg">
+		<img class="index-img" src="img/portfolio/0.jpg">
+	</div>
 
-		function dragElement(elmnt) {
-			var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;{
-    				elmnt.onmousedown = dragMouseDown;
-  			}
+	<p id="close-btn" visibility="hidden" onclick="closeImageView()"> x </p>
 
-  			function dragMouseDown(e) {
-    				e = e || window.event;
-    				e.preventDefault();
-    		
-    				pos3 = e.clientX;
-    				pos4 = e.clientY;
-    				document.onmouseup = closeDragElement;
-    				document.onmousemove = elementDrag;
-  			}
-
-  			function elementDrag(e) {
-    				e = e || window.event;
-    				e.preventDefault();
-    
-    				pos1 = pos3 - e.clientX;
-    				pos2 = pos4 - e.clientY;
-    				pos3 = e.clientX;
-    				pos4 = e.clientY;
-    
-    				elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    				elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  			}
-
-  			function closeDragElement() {
-    				document.onmouseup = null;
-    				document.onmousemove = null;
-  			}	
-		}
-	</script>
-
-
-  
 </body>
-</html>
+
+<script type="text/javascript" src="script.js"></script>
