@@ -17,11 +17,11 @@ p {
 .sidebar {
 	visibility: visible;
 	margin: 0;
-	padding: 10px;
+	padding: 50px;
 	width: 200px;
 	height: 100%;
 	position: fixed;
-	top:100px;
+	margin-top:150px;
 	overflow: auto;
 }
 
@@ -38,10 +38,10 @@ p {
 .sidebar a {
 	font-size: 30px;
 	color: #001418;
-	margin: 0;
+	margin-left: 20px;
 	font-weight: 400;
 	font-family: 'Josefin Sans';
-	padding: 20px;
+	padding: 0px;
  	text-decoration: none;
 }
 
@@ -63,21 +63,20 @@ p {
 	text-decoration: none;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-  margin-left: 250px;
-  height: 100%;
+	margin-top: 50px;
+  	margin-left: 250px;
+  	height: 100%;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
+  	margin-top: 0px;
     width: 100%;
-    height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+  div.content {margin:auto; width:100%; text-align: center;}
+  #image-large {margin:auto; width: 100%; text-align: center;}
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -104,7 +103,9 @@ div.content {
 	padding: 15px;
 }
 
-
+.text {
+	margin-top: 100px;
+}
 
 /* ----------------------
 		Gallery
@@ -130,7 +131,6 @@ div.content {
 ------------------------*/
 
 #image-large {
-	position: fixed;
 	height: 70%;
 	display: none;
 	position: absolute;
