@@ -79,13 +79,6 @@ div.content {
   #image-large {margin:auto; width: 100%; text-align: center;}
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
 
 #copyright{
 	font-size: 12px;
