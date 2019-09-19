@@ -1,17 +1,23 @@
 
-var TOTAL = 10;
+var TOTAL = 15;
 var index;
 var descriptions = [
-"1",
-"2", 
-"3", 
-"4", 
-"5", 
-"6", 
-"7", 
-"8", 
-"9", 
-"10"]
+"\"Femmes Fatales\", oil on canvas, 2019",
+"\"EJ's Luncheonette\", acrylic on canvas, 2018", 
+"\"portrait of two boys\", acrylic on canvas, 2018", 
+"\"self portrait\", oil on canvas, 2019", 
+"\"green landscape\", oil on canvas, 2019", 
+"\"portrait of Sam\", graphite and ink, 2018", 
+"\"portrait of Lily\", graphite and ink, 2018", 
+"\"Gustie in the art room\", acrylic on canvas, 2017", 
+"\"still life with eggs\", oil on canvas, 2019",
+"\"self portrait in sweatpants\", acrylic on canvas, 2017",
+"\"untitled\", ink, 2018",
+"\"untitled\", graphite and ink, 2018",
+"\"self portrait\", acrylic on canvas, 2017",
+"\"She Means Business\", acrylic on canvas, 2017",
+"\"Jonathan in the art room\", acrylic on canvas, 2017",
+]
 
 
 function loadGallery() {
@@ -41,13 +47,21 @@ function viewImage(img) {
 	$("#gallery").fadeOut();
 	$("#close-btn").fadeIn();
 	$("#image-large").fadeIn();
-	if(index == 1) 
-		{$("#prev-btn").css("display", "none"); 
+	if(index == 1) {
+		$("#prev-btn").css("display", "none"); 
 		$("#slash").css("display", "none"); 
+	}
+	else{
+		$("#prev-btn").fadeIn(); 
+		$("#slash").fadeIn(); 
 	}
 	if(index == TOTAL) 
 		{$("#next-btn").css("display", "none"); 
 		$("#slash").css("display", "none"); 
+	}
+	else{
+		$("#next-btn").fadeIn(); 
+		$("#slash").fadeIn(); 
 	}
 	$("#toggle").fadeIn();
 	$("#counter").fadeIn();
