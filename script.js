@@ -2,10 +2,10 @@
 var TOTAL = 16;
 var index;
 var descriptions = [
+"\"Zardulu, queen of New York\", oil on canvas, 2020",
 "\"Femmes Fatales\", oil on canvas, 2019",
-"\"EJ's Luncheonette\", acrylic on canvas, 2018", 
+"\"EJ's\", acrylic on canvas, 2018", 
 "\"portrait of two boys\", acrylic on canvas, 2018", 
-"\"self portrait\", oil on canvas, 2019", 
 "\"green landscape\", oil on canvas, 2019", 
 "\"portrait of Sam\", graphite and ink, 2018", 
 "\"portrait of Lily\", graphite and ink, 2018", 
@@ -17,6 +17,7 @@ var descriptions = [
 "\"self portrait\", acrylic on canvas, 2017",
 "\"She Means Business\", acrylic on canvas, 2017",
 "\"Jonathan in the art room\", acrylic on canvas, 2017",
+"\"self portrait\", oil on canvas, 2019", 
 ]
 
 
