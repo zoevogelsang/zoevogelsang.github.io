@@ -1,5 +1,5 @@
 
-var TOTAL = 15;
+var TOTAL = 16;
 var index;
 var descriptions = [
 "\"Femmes Fatales\", oil on canvas, 2019",
