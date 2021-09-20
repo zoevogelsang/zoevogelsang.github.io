@@ -1,23 +1,26 @@
 
-var TOTAL = 16;
+var TOTAL = 19;
 var index;
 var descriptions = [
-"\"Zardulu, queen of New York\", oil on canvas, 2020",
+"\"Sam and Enid\", oil on canvas, 2021",
+"\"Zardulu\", oil on canvas, 2020",
 "\"Femmes Fatales\", oil on canvas, 2019",
 "\"EJ's\", acrylic on canvas, 2018", 
-"\"portrait of two boys\", acrylic on canvas, 2018", 
+"\"Ratnum Opus\", oil on canvas, 2020", 
+"\"untitled\", oil on canvas, 2020", 
 "\"green landscape\", oil on canvas, 2019", 
-"\"portrait of Sam\", graphite and ink, 2018", 
 "\"portrait of Lily\", graphite and ink, 2018", 
+"\"portrait of two boys\", acrylic on canvas, 2018", 
 "\"Gustie in the art room\", acrylic on canvas, 2017", 
+"\"portrait of Sam\", graphite and ink, 2018", 
 "\"still life with eggs\", oil on canvas, 2019",
 "\"self portrait in sweatpants\", acrylic on canvas, 2017",
-"\"untitled\", ink, 2018",
+"\"self portrait\", oil on canvas, 2019", 
 "\"untitled\", graphite and ink, 2018",
-"\"self portrait\", acrylic on canvas, 2017",
 "\"She Means Business\", acrylic on canvas, 2017",
 "\"Jonathan in the art room\", acrylic on canvas, 2017",
-"\"self portrait\", oil on canvas, 2019", 
+"\"untitled\", ink, 2018",
+"\"self portrait\", acrylic on canvas, 2017"
 ]
 
 
