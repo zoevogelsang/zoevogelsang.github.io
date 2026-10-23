@@ -6,14 +6,14 @@
 <title>Zoe Vogelsang</title>
 <style>
 html{height:100%}
-body{height:100%;display:flex;flex-direction:column;margin:0;background:#fff;color:#000;font-family:"Times New Roman",Times,serif;font-size:18px;line-height:1.5}
+body{height:100vh;height:100dvh;overflow:hidden;display:flex;flex-direction:column;margin:0;background:#fff;color:#000;font-family:"Times New Roman",Times,serif;font-size:18px;line-height:1.5}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 button:hover{text-decoration:underline}
 header{display:flex;justify-content:space-between;padding:20px;flex-wrap:wrap;gap:12px}
 nav button{margin-left:20px}
 .stage{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
-.stage img{max-width:100%;max-height:100%}
-.ph{height:100%;aspect-ratio:4/5;background:#eee}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.ph{position:absolute;inset:0;margin:auto;height:100%;max-width:100%;aspect-ratio:4/5;background:#eee}
 .zone{position:absolute;top:0;bottom:0;width:50%}
 .prev{left:0;cursor:w-resize}.next{right:0;cursor:e-resize}
 .bar{display:flex;justify-content:space-between;padding:12px 20px}
@@ -54,21 +54,31 @@ p{margin:0 0 12px}
     <h2>Curriculum Vitae</h2>
 
     <h2>Education</h2>
-    <div class="row"><span>2026–</span><span>MFA, School of the Museum of Fine Arts at Tufts, Boston</span></div>
-    <div class="row"><span>Year</span><span>BFA, School, City</span></div>
-
-    <h2>Solo Exhibitions</h2>
-    <div class="row"><span>Year</span><span><i>Exhibition Title</i>, Gallery, City</span></div>
+    <div class="row"><span>2026–present</span><span>MFA, School of the Museum of Fine Arts at Tufts, Boston</span></div>
+    <div class="row"><span>2020-2022</span><span>BA in Computer Science, Barnard College, City</span></div>
+    <div class="row"><span>2018-2020</span><span>BA in Computer Science, Barnard College, City</span></div>
+      
+    <h2>Residencies</h2>
+    <div class="row"><span>2025</span><span>Burren College of Art, Ballyvaughan, Co. Clare Ireland</span></div>
 
     <h2>Group Exhibitions</h2>
-    <div class="row"><span>Year</span><span><i>Exhibition Title</i>, Gallery, City</span></div>
-    <div class="row"><span>Year</span><span><i>Exhibition Title</i>, Gallery, City</span></div>
+    <div class="row"><span>2025</span><span>Residency Exhibition, Burren College of Art, Ballyvaughan, Co. Clare, Ireland</span></div>
+    <div class="row"><span>2022</span><span>Visual Arts Undergraduate Exhibition, Columbia University, NYC</span></div>
+    <div class="row"><span>2019</span><span>Visual Arts Undergraduate Exhibition, University of Southern California, Los Angeles</span></div>
+    <div class="row"><span>2018</span><span>“Tag Yourself”, Group Exhibition, TAG, NYC</span></div>
+    <div class="row"><span>2017</span><span>"Do You Mind?", Group Exhibition, TAG, NYC</span></div>
 
-    <h2>Awards &amp; Residencies</h2>
-    <div class="row"><span>Year</span><span>Award or Residency, Organization</span></div>
+    <h2>Arts and Cultural Involvement</h2>
+    <div class="row"><span>2022</span><span>Brand/Graphic Designer, Steamroom Comedy Series, NYC</span></div>
+    <div class="row"><span>2020-2022</span><span>Staff Artist, Columbia Federalist Satire Publication, Columbia University</span></div>
+    <div class="row"><span>2016-2018</span><span>Organizer, Sales and Merchandise Director of Teen Art Gallery (TAG)</span></div>
+    <div class="row"><span>2017</span><span>8-Ball Community Archival Volunteer</span></div>
+    <div class="row"><span>2017</span><span>Organizer for Bronx Artist Documentary Project</span></div>
 
-    <h2>Press</h2>
-    <div class="row"><span>Year</span><span>Author, “Article Title,” <i>Publication</i></span></div>
+    <h2>Work Experience</h2>
+    <div class="row"><span>2022-2025</span><span>Software Engineer, Google</span></div>
+    <div class="row"><span>2019-2020</span><span>Teaching Assistant, USC Department of Computer Science</span></div>
+
   </div>
 </section>
 
