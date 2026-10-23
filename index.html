@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Zoe Vogelsang</title>
 <style>
-body{margin:0;background:#fff;color:#000;font-family:"Times New Roman",Times,serif;font-size:16px;line-height:1.5}
+html{height:100%}
+body{height:100%;display:flex;flex-direction:column;margin:0;background:#fff;color:#000;font-family:"Times New Roman",Times,serif;font-size:18px;line-height:1.5}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 button:hover{text-decoration:underline}
 header{display:flex;justify-content:space-between;padding:20px;flex-wrap:wrap;gap:12px}
 nav button{margin-left:20px}
-.stage{position:relative;height:70vh;display:flex;align-items:center;justify-content:center}
+.stage{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
 .stage img{max-width:100%;max-height:100%}
 .ph{height:100%;aspect-ratio:4/5;background:#eee}
 .zone{position:absolute;top:0;bottom:0;width:50%}
@@ -50,7 +51,7 @@ p{margin:0 0 12px}
 <section class="panel" id="cv" aria-label="CV">
   <button class="close" data-open="work">x</button>
   <div class="inner">
-    <h1>Curriculum Vitae</h1>
+    <h2>Curriculum Vitae</h2>
 
     <h2>Education</h2>
     <div class="row"><span>2026–</span><span>MFA, School of the Museum of Fine Arts at Tufts, Boston</span></div>
