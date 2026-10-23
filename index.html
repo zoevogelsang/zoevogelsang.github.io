@@ -5,11 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Zoe Vogelsang</title>
 <style>
+body{margin:0;background:#fff;color:#000;font-family:"Times New Roman",Times,serif;font-size:18px;line-height:1.5}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+button:hover{text-decoration:underline}
+header{display:flex;justify-content:space-between;padding:20px;flex-wrap:wrap;gap:12px}
+nav button{margin-left:20px}
+.stage{position:relative;height:70vh;display:flex;align-items:center;justify-content:center}
+.stage img{max-width:100%;max-height:100%}
+.ph{height:100%;aspect-ratio:4/5;background:#eee}
+.zone{position:absolute;top:0;bottom:0;width:50%}
+.prev{left:0;cursor:w-resize}.next{right:0;cursor:e-resize}
+.bar{display:flex;justify-content:space-between;padding:12px 20px}
+.bar button{margin:0 8px}
+.panel{display:none;position:fixed;inset:0;background:#fff;overflow:auto;padding:20px}
+.panel.open{display:block}
+.close{position:absolute;top:20px;right:20px}
+.inner{max-width:600px;margin:60px auto}
+h2{font-size:18px;font-weight:bold;margin:28px 0 8px}
+p{margin:0 0 12px}
+.row{display:flex;gap:16px}.row span:first-child{min-width:60px}
 </style>
 </head>
 <body>
 <header>
-  <div class="name">Zoe Surname</div>
+  <div class="name">Zoe Vogelsang</div>
   <nav aria-label="Main">
     <button data-open="work" aria-current="true">Work</button>
     <button data-open="cv">CV</button>
@@ -56,8 +75,8 @@
   <button class="close" data-open="work">Close</button>
   <div class="inner">
     <h1>Bio</h1>
-    <p>Zoe Surname is a painter based in Boston. Replace this with two or three short paragraphs about your practice: what you paint, what you’re interested in, and how you work.</p>
-    <p>She is currently an MFA student at the School of the Museum of Fine Arts at Tufts.</p>
+    <p>Zoe Vogelsang is a painter based in Boston. .</p>
+    <p>She is currently pursuing a Masters in Creative Practice at the School of the Museum of Fine Arts at Tufts.</p>
 
     <h2>Contact</h2>
     <p><a href="mailto:you@example.com">you@example.com</a></p>
