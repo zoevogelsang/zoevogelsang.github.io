@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zoe Surname — Painter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--fg:#1a1a1a;--muted:#767676;--line:#e2e2e2;--ph:#e9e9e7;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--fg:#ececec;--muted:#8d8d8d;--line:#2c2c2c;--ph:#202020}}
+:root[data-theme="dark"]{--bg:#141414;--fg:#ececec;--muted:#8d8d8d;--line:#2c2c2c;--ph:#202020}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:400 15px/1.6 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+button:focus-visible{outline:2px solid var(--fg);outline-offset:4px}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:24px 28px;flex-wrap:wrap}
+.name{font-weight:500;letter-spacing:.01em}
+nav{display:flex;gap:22px}
+nav button{color:var(--muted);padding-bottom:2px;border-bottom:1px solid transparent}
+nav button:hover,nav button[aria-current="true"]{color:var(--fg);border-bottom-color:var(--fg)}
+main{flex:1;min-height:0;display:flex;flex-direction:column;padding:0 28px 24px}
+.stage{flex:1;min-height:0;position:relative;display:flex;align-items:center;justify-content:center}
+.stage img,.stage .ph{max-width:100%;max-height:100%;object-fit:contain}
+.ph{width:min(70vh,100%);aspect-ratio:4/5;background:var(--ph)}
+.zone{position:absolute;top:0;bottom:0;width:50%;cursor:pointer;background:none}
+.zone.prev{left:0;cursor:w-resize}.zone.next{right:0;cursor:e-resize}
+.bar{display:flex;justify-content:space-between;gap:16px;padding-top:16px;font-size:14px}
+.cap{color:var(--muted)}.cap b{color:var(--fg);font-weight:500}
+.ctl{display:flex;gap:18px;color:var(--muted);white-space:nowrap}
+.ctl button:hover{color:var(--fg)}
+.panel{position:fixed;inset:0;background:var(--bg);overflow-y:auto;padding:calc(24px + env(safe-area-inset-top,0px)) 28px calc(48px + env(safe-area-inset-bottom,0px));display:none}
+.panel.open{display:block}
+.panel .close{position:fixed;top:calc(24px + env(safe-area-inset-top,0px));right:28px;color:var(--muted)}
+.panel .close:hover{color:var(--fg)}
+.inner{max-width:560px;margin:56px auto 0}
+h1{font-size:15px;font-weight:500;margin:0 0 28px}
+h2{font-size:15px;font-weight:500;margin:36px 0 10px}
+.row{display:grid;grid-template-columns:72px 1fr;gap:12px;margin:0 0 6px}
+.row span:first-child{color:var(--muted)}
+p{margin:0 0 14px;max-width:62ch}
+a{color:var(--fg);text-underline-offset:3px}
+.muted{color:var(--muted)}
+@media (max-width:520px){header,main{padding-left:18px;padding-right:18px}.panel{padding-left:18px;padding-right:18px}.panel .close{right:18px}.bar{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="name">Zoe Surname</div>
+  <nav aria-label="Main">
+    <button data-open="work" aria-current="true">Work</button>
+    <button data-open="cv">CV</button>
+    <button data-open="bio">Bio &amp; Contact</button>
+  </nav>
+</header>
 
+<main>
+  <div class="stage" id="stage" aria-live="polite">
+    <button class="zone prev" id="prev" aria-label="Previous work"></button>
+    <button class="zone next" id="next" aria-label="Next work"></button>
+  </div>
+  <div class="bar">
+    <div class="cap" id="cap"></div>
+    <div class="ctl"><button id="prev2">Previous</button><span id="count"></span><button id="next2">Next</button></div>
+  </div>
+</main>
+
+<section class="panel" id="cv" aria-label="CV">
+  <button class="close" data-open="work">Close</button>
+  <div class="inner">
+    <h1>Curriculum Vitae</h1>
+
+    <h2>Education</h2>
+    <div class="row"><span>2026–</span><span>MFA, School of the Museum of Fine Arts at Tufts, Boston</span></div>
+    <div class="row"><span>Year</span><span>BFA, School, City</span></div>
+
+    <h2>Solo Exhibitions</h2>
+    <div class="row"><span>Year</span><span><i>Exhibition Title</i>, Gallery, City</span></div>
+
+    <h2>Group Exhibitions</h2>
+    <div class="row"><span>Year</span><span><i>Exhibition Title</i>, Gallery, City</span></div>
+    <div class="row"><span>Year</span><span><i>Exhibition Title</i>, Gallery, City</span></div>
+
+    <h2>Awards &amp; Residencies</h2>
+    <div class="row"><span>Year</span><span>Award or Residency, Organization</span></div>
+
+    <h2>Press</h2>
+    <div class="row"><span>Year</span><span>Author, “Article Title,” <i>Publication</i></span></div>
+  </div>
+</section>
+
+<section class="panel" id="bio" aria-label="Bio and contact">
+  <button class="close" data-open="work">Close</button>
+  <div class="inner">
+    <h1>Bio</h1>
+    <p>Zoe Surname is a painter based in Boston. Replace this with two or three short paragraphs about your practice: what you paint, what you’re interested in, and how you work.</p>
+    <p>She is currently an MFA student at the School of the Museum of Fine Arts at Tufts.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:you@example.com">you@example.com</a></p>
+    <p><a href="https://instagram.com/yourhandle" rel="noopener">@yourhandle</a></p>
+    <p class="muted">Boston, Massachusetts</p>
+  </div>
+</section>
+
+<script>
+// Add your work here. Each entry: title, year, medium, size, and an image (src).
+// Leave src empty to show a placeholder.
+var works = [
+  {title:"Untitled", year:"2026", medium:"Oil on canvas", size:"24 × 30 in", src:""},
+  {title:"Untitled", year:"2026", medium:"Oil on canvas", size:"36 × 48 in", src:""},
+  {title:"Untitled", year:"2025", medium:"Acrylic on panel", size:"18 × 24 in", src:""},
+  {title:"Untitled", year:"2025", medium:"Oil on linen", size:"30 × 40 in", src:""}
+];
+
+var i = 0, stage = document.getElementById("stage"), cap = document.getElementById("cap"), count = document.getElementById("count");
+var el = null;
+
+function show(n){
+  i = (n + works.length) % works.length;
+  var w = works[i];
+  if (el) el.remove();
+  if (w.src){ el = document.createElement("img"); el.src = w.src; el.alt = w.title + ", " + w.year; }
+  else { el = document.createElement("div"); el.className = "ph"; el.setAttribute("role","img"); el.setAttribute("aria-label","Placeholder for " + w.title); }
+  stage.insertBefore(el, stage.firstChild);
+  cap.innerHTML = "<b></b>, " + w.year + ". " + w.medium + ", " + w.size;
+  cap.querySelector("b").textContent = w.title;
+  count.textContent = (i + 1) + " / " + works.length;
+}
+
+function go(d){ show(i + d); }
+["prev","prev2"].forEach(function(id){ document.getElementById(id).addEventListener("click", function(){ go(-1); }); });
+["next","next2"].forEach(function(id){ document.getElementById(id).addEventListener("click", function(){ go(1); }); });
+
+var navBtns = document.querySelectorAll("nav button");
+function open(name){
+  document.querySelectorAll(".panel").forEach(function(p){ p.classList.toggle("open", p.id === name); });
+  navBtns.forEach(function(b){ b.setAttribute("aria-current", b.dataset.open === name ? "true" : "false"); });
+  try { history.replaceState(null, "", name === "work" ? "#" : "#" + name); } catch(e){}
+}
+document.querySelectorAll("[data-open]").forEach(function(b){ b.addEventListener("click", function(){ open(b.dataset.open); }); });
+
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape") open("work");
+  if (document.querySelector(".panel.open")) return;
+  if (e.key === "ArrowLeft") go(-1);
+  if (e.key === "ArrowRight") go(1);
+});
+
+var touchX = null;
+stage.addEventListener("touchstart", function(e){ touchX = e.touches[0].clientX; }, {passive:true});
+stage.addEventListener("touchend", function(e){
+  if (touchX === null) return;
+  var dx = e.changedTouches[0].clientX - touchX;
+  if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
+  touchX = null;
+});
+
+show(0);
+var h = (location.hash || "").replace("#","");
+if (h === "cv" || h === "bio") open(h);
+</script>
+</body>
+</html>
